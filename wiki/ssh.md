@@ -39,9 +39,28 @@ All commands below assume a Unix shell: `Bash` (`Linux`, `WSL`) or `Zsh` (`macOS
 
 ## `SSH` keys
 
+`SSH` uses a key pair for authentication:
+
+<!-- no toc -->
+- [`SSH` public key](#ssh-public-key)
+- [`SSH` private key](#ssh-private-key)
+
 ### `SSH` public key
 
+An `SSH` public key is the shareable half of an [`SSH`](#what-is-ssh) key pair.
+
+You give your public key to [remote hosts](./computer-networks.md#remote-host) — they store it in `~/.ssh/authorized_keys` to recognize you on future connections.
+
+The public key file has a `.pub` extension (e.g., `se_toolkit_key.pub`).
+
 ### `SSH` private key
+
+An `SSH` private key is the secret half of an [`SSH`](#what-is-ssh) key pair.
+
+It stays on your local machine and is never shared. During authentication, `SSH` uses it to prove your identity without sending it over the [network](./computer-networks.md#what-is-a-network).
+
+> [!CAUTION]
+> Never share your private key. Anyone who has it can authenticate as you.
 
 ## `SSH` daemon
 
