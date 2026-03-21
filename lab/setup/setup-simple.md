@@ -228,8 +228,8 @@ The database starts empty. You need to run the ETL pipeline to populate it with 
 
    ```json
    {
-     "items_loaded": 120,
-     "logs_loaded": 5000
+     "new_records": 120,
+     "total_records": 9502
    }
    ```
 
