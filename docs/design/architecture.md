@@ -150,7 +150,7 @@ graph TD
     CADDY -->|"Reverse proxy\nAPI requests"| API
     CADDY -->|"WebSocket\n/ws/chat"| NANOBOT
     API -->|"Async SQL\n(SQLAlchemy)"| DB
-    NANOBOT -->|"MCP tools\n(lms_mcp_*)"| API
+    NANOBOT -->|"MCP tools\n(mcp_lms_*)"| API
     TGBOT -->|"WebSocket\nws://nanobot:8765"| NANOBOT
     Admin -->|"HTTP :42003"| PGA
     PGA -->|SQL| DB
